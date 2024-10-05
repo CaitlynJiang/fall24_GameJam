@@ -110,15 +110,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tutorial_Fish_Pieces_Refined_0
+      name: Fish_Body
       rect:
         serializedVersion: 2
-        x: 119
+        x: 121
         y: 130
         width: 195
         height: 637
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,6 +126,69 @@ TextureImporter:
       bones: []
       spriteID: 7740faf03d75c11439782dc384987f77
       internalID: -1237719769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Eye
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 658
+        width: 75
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd3bdb8203996148b86b9bb41e10376
+      internalID: -367898256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Fin
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 291
+        width: 126
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2cbda826e38b040a5ceb09950abf42
+      internalID: 309191305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_Tail
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 28
+        width: 171
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96a882523a286f4e9de17838c71be94
+      internalID: 396615139
       vertices: []
       indices: 
       edges: []
@@ -141,7 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tutorial_Fish_Pieces_Refined_0: -1237719769
+      Fish_Body: -1237719769
+      Fish_Eye: -367898256
+      Fish_Fin: 309191305
+      Fish_Tail: 396615139
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
