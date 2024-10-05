@@ -9,6 +9,7 @@ public class PieceSpawner : MonoBehaviour
     public Transform spawnPoint;       // The position where pieces will spawn
     public float amplitude = 3.0f;     // Amplitude of the motion for each piece
     public Text levelCompleteText;     // Reference to the "Level Complete" UI text
+    public Animator cutsceneAnimator;  // Reference to the cutscene Animator
 
     private GameObject currentPiece;   // The currently active piece
     private List<GameObject> placedPieces = new List<GameObject>(); // Track placed pieces
@@ -16,6 +17,7 @@ public class PieceSpawner : MonoBehaviour
     private int curr = 0;              // Count how many pieces have been spawned
     private bool lastPieceSpawned = false; // Flag to stop spawning after the last piece
     private bool newParentCreated = false;  // Ensure we create the parent object only once
+    private GameObject parentObject;    // Store the parent object reference
 
     private void Start()
     {
@@ -46,6 +48,9 @@ public class PieceSpawner : MonoBehaviour
                     {
                         CreateParentForPlacedPieces();
                         newParentCreated = true;  // Ensure the parent is only created once
+
+                        // Trigger the cutscene animation after the last piece is placed
+                        cutsceneAnimator.SetTrigger("StartCutscene");  
                     }
                 }
             }
@@ -100,9 +105,7 @@ public class PieceSpawner : MonoBehaviour
     private void CreateParentForPlacedPieces()
     {
         // Create a new parent GameObject
-        GameObject parentObject = new GameObject("PlacedPiecesParent");
-		parentObject.AddComponent<Animator>();  // Add Animator component
-
+        parentObject = new GameObject("PlacedPiecesParent");
 
         // Loop through each placed piece and set its parent to the new parentObject
         foreach (GameObject piece in placedPieces)
