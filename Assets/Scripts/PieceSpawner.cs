@@ -53,12 +53,12 @@ public class PieceSpawner : MonoBehaviour
         PieceMovement pieceMovement = currentPiece.GetComponent<PieceMovement>();
         if (pieceMovement != null)
         {
-            if (curr < 3)
+            if (curr < 2)
             {    
-                pieceMovement.x_speed = Random.Range(0.5f, 3.0f);  // Random X 
-                pieceMovement.y_speed = Random.Range(0.5f, 3.0f);  // Random Y 
+                pieceMovement.x_speed = Random.Range(0.5f, 2.0f);  // Random X 
+                pieceMovement.y_speed = Random.Range(0.5f, 2.0f);  // Random Y 
             }
-            else if (curr < 8)
+            else if (curr < piecePrefabs.Length - 1)
             {    
                 pieceMovement.x_speed = Random.Range(2.0f, 5.0f);  // Random X 
                 pieceMovement.y_speed = Random.Range(2.0f, 5.0f);  // Random Y 
