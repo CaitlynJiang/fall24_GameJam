@@ -11,9 +11,11 @@ public class PieceSpawner : MonoBehaviour
     public Text levelCompleteText;     // Reference to the "Level Complete" UI text
 
     private GameObject currentPiece;   // The currently active piece
+    private List<GameObject> placedPieces = new List<GameObject>(); // Track placed pieces
     private int currentPieceIndex = 0; // Track the index of the piece to spawn next
     private int curr = 0;              // Count how many pieces have been spawned
     private bool lastPieceSpawned = false; // Flag to stop spawning after the last piece
+    private bool newParentCreated = false;  // Ensure we create the parent object only once
 
     private void Start()
     {
@@ -35,10 +37,17 @@ public class PieceSpawner : MonoBehaviour
                 {
                     SpawnPiece();
                 }
-				else
-				{
-					levelCompleteText.gameObject.SetActive(true);  // Display "Level Complete" message
-				}
+                else
+                {
+                    levelCompleteText.gameObject.SetActive(true);  // Display "Level Complete" message
+
+                    // Create a parent object if it hasn't been created yet
+                    if (!newParentCreated)
+                    {
+                        CreateParentForPlacedPieces();
+                        newParentCreated = true;  // Ensure the parent is only created once
+                    }
+                }
             }
         }
     }
@@ -48,6 +57,9 @@ public class PieceSpawner : MonoBehaviour
     {
         // Spawn the next piece from the array
         currentPiece = Instantiate(piecePrefabs[currentPieceIndex], spawnPoint.position, Quaternion.identity);
+
+        // Add the newly spawned piece to the list of placed pieces
+        placedPieces.Add(currentPiece);
 
         // Set random movement properties for the new piece
         PieceMovement pieceMovement = currentPiece.GetComponent<PieceMovement>();
@@ -76,11 +88,26 @@ public class PieceSpawner : MonoBehaviour
         {
             lastPieceSpawned = true;  // Set flag to stop further spawning
         }
-		
+        
         // Update the index for the next piece (but don't go beyond the array length)
         currentPieceIndex = (currentPieceIndex + 1) % piecePrefabs.Length;
 
         // Increment the number of pieces spawned
         curr++;
+    }
+
+    // Method to create a new parent GameObject and make all placed pieces its children
+    private void CreateParentForPlacedPieces()
+    {
+        // Create a new parent GameObject
+        GameObject parentObject = new GameObject("PlacedPiecesParent");
+
+        // Loop through each placed piece and set its parent to the new parentObject
+        foreach (GameObject piece in placedPieces)
+        {
+            piece.transform.SetParent(parentObject.transform);
+        }
+
+        Debug.Log("All placed pieces have been parented to the new parent object.");
     }
 }
