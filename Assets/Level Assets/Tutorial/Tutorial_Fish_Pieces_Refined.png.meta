@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e535d9a27e674b3989978445e804ecf
+guid: 0230f7e19448e452db1f116232e1e3d1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,70 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Tutorial_Fish_Pieces_0
-      rect:
-        serializedVersion: 2
-        x: 409
-        y: 674
-        width: 58
-        height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7da8ab71367e5ad4cad803a134c8da36
-      internalID: 456816823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tutorial_Fish_Pieces_1
-      rect:
-        serializedVersion: 2
-        x: 426
-        y: 299
-        width: 95
-        height: 173
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8a4e641e7fb4914d85a696a70e3776f
-      internalID: 1675693898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tutorial_Fish_Pieces_2
-      rect:
-        serializedVersion: 2
-        x: 337
-        y: 33
-        width: 146
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c1c4cfd61c50ba49b82279c78b9ad85
-      internalID: 972945034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -182,10 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Tutorial_Fish_Pieces_0: 456816823
-      Tutorial_Fish_Pieces_1: 1675693898
-      Tutorial_Fish_Pieces_2: 972945034
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
