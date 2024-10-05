@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7770173e6e85c4ed1be8e287285822e2
+guid: 5cd2c8e5dcb6c41989a21508979dc3ed
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,112 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Tutorial_Sheet1_0
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 1459
-        width: 1532
-        height: 878
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9ee3c11095f8544b9b814d0dcf5b079
-      internalID: -2099201349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tutorial_Sheet1_1
-      rect:
-        serializedVersion: 2
-        x: 349
-        y: 974
-        width: 456
-        height: 457
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75ec2247a6e54e94f87a94d9f9717789
-      internalID: -587481851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tutorial_Sheet1_2
-      rect:
-        serializedVersion: 2
-        x: 843
-        y: 971
-        width: 474
-        height: 465
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42dffc53854e5214f80ba522fda235f0
-      internalID: -1141496280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tutorial_Sheet1_3
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 346
-        width: 488
-        height: 606
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7e2386d4252e3845a52f57ad312335d
-      internalID: 749110210
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tutorial_Sheet1_4
-      rect:
-        serializedVersion: 2
-        x: 533
-        y: 331
-        width: 469
-        height: 623
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42e109dd4588d38429e535f9bb36e179
-      internalID: -143240367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -224,12 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Tutorial_Sheet1_0: -2099201349
-      Tutorial_Sheet1_1: -587481851
-      Tutorial_Sheet1_2: -1141496280
-      Tutorial_Sheet1_3: 749110210
-      Tutorial_Sheet1_4: -143240367
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
