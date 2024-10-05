@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Level1_FishinPole_Pieces1_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 66
+        width: 719
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68972232b706a54fbcc4e8ad0bf4b0e
+      internalID: -301711881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_FishinPole_Pieces1_1
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 513
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0be4502200e7e4a9ca651f8c900c77
+      internalID: -232806036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_FishinPole_Pieces1_2
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 325
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99b0d3a98fe9474192e9af296b98856
+      internalID: -1753292733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1_FishinPole_Pieces1_3
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 85
+        width: 106
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7827d31544990f34da3279f8316ff64a
+      internalID: 796003765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +203,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Level1_FishinPole_Pieces1_0: -301711881
+      Level1_FishinPole_Pieces1_1: -232806036
+      Level1_FishinPole_Pieces1_2: -1753292733
+      Level1_FishinPole_Pieces1_3: 796003765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
