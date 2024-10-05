@@ -101,6 +101,8 @@ public class PieceSpawner : MonoBehaviour
     {
         // Create a new parent GameObject
         GameObject parentObject = new GameObject("PlacedPiecesParent");
+		parentObject.AddComponent<Animator>();  // Add Animator component
+
 
         // Loop through each placed piece and set its parent to the new parentObject
         foreach (GameObject piece in placedPieces)
