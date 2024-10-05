@@ -48,4 +48,10 @@ public class PieceMovement : MonoBehaviour
         // Update the object's position
         transform.position = new Vector3(x, y, startPosition.z);
     }
+
+    // Method to check if both X and Y movements have stopped
+    public bool IsMovementStopped()
+    {
+        return stopXMovement && stopYMovement;
+    }
 }
