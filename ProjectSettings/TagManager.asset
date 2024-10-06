@@ -44,3 +44,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG2
+    uniqueID: 1948693837
+    locked: 0
+  - name: FG1
+    uniqueID: 575955823
+    locked: 0
+  - name: FG2
+    uniqueID: 2119862987
+    locked: 0
+  - name: MC
+    uniqueID: 2016529993
+    locked: 0
+  - name: Overlay
+    uniqueID: 2149652471
+    locked: 0

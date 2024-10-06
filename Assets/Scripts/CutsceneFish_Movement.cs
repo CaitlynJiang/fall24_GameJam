@@ -6,7 +6,7 @@ public class CutsceneFish_Movement : MonoBehaviour
 {
     public float moveDistance = 2.0f; // The distance the fish will move to the right
     public float moveSpeed = 2.0f;    // The speed at which the platform moves
-
+   
     private Vector3 startPos;         // The starting position of the platform
     private float initialX;           // The initial X-position of the platform
 
