@@ -9,11 +9,15 @@ public class CutsceneFish_Movement : MonoBehaviour
    
     private Vector3 startPos;         // The starting position of the platform
     private float initialX;           // The initial X-position of the platform
+    
 
     void Start()
     {
         startPos = transform.position;
         initialX = startPos.x;
+        
+        
+        
     }
 
     void Update()

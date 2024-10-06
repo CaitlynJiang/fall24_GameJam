@@ -9,6 +9,7 @@ public class BubbleHandler : MonoBehaviour
     public float growthFactor;
     public float scaleSpeed;
     public GameObject Pop;
+    private float randScale;
 
     public Vector3 currentScale;
 
@@ -16,7 +17,23 @@ public class BubbleHandler : MonoBehaviour
     {
         
         // Set the scale immediately after instantiation
-        float randScale = Random.Range(minDesiredScale, maxDesiredScale);
+        int scaleNum = Random.Range(1,4);
+        
+        
+        if(scaleNum == 1)
+        {
+            randScale = 0.1f;
+        }
+        if(scaleNum == 2)
+        {
+
+            randScale = 0.3f;
+        }
+        if (scaleNum == 3)
+        {
+            randScale = 0.5f;
+        }
+        
         transform.localScale = new Vector3(randScale, randScale, randScale);
         initialScale = transform.localScale;
         targetScale = new Vector3(initialScale.x + growthFactor, initialScale.y + growthFactor, initialScale.z + growthFactor);
