@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cutscene1_Background_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 4172
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3919ab883f1ee423ba0bda038098b558
+      internalID: 830641307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cutscene1_Background_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 4132
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1a9e62d6bc64da9ade44e0ec6a08ab
+      internalID: -370870035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene1_foreground1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 550
+        width: 4157
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51900e71bc864901a0335fb3a239e8c
+      internalID: 404825101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene1_foreground2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 95
+        width: 3334
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c44657da88e44a4f977e9582932c8af
+      internalID: 285805990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutscene1_background
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1084
+        width: 1960
+        height: 1313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c169174add1c4404dba0da081aafe979
+      internalID: -947444895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cutscene1_background1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2493
+        width: 2686
+        height: 901
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec741bd7cbea142b598767cb494bd47b
+      internalID: 1545853695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cutscene1_overlay
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3421
+        width: 2695
+        height: 840
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f0c962c9c3b470e831d42999771845
+      internalID: -1139439331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +266,43 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cutscene1_Background_SpriteSheet_10: 67338654
+      Cutscene1_Background_SpriteSheet_11: -485827383
+      Cutscene1_Background_SpriteSheet_12: 141715981
+      Cutscene1_Background_SpriteSheet_13: -370870035
+      Cutscene1_Background_SpriteSheet_14: -494926984
+      Cutscene1_Background_SpriteSheet_15: -1969094098
+      Cutscene1_Background_SpriteSheet_16: -1592772228
+      Cutscene1_Background_SpriteSheet_17: 457655625
+      Cutscene1_Background_SpriteSheet_18: -746343485
+      Cutscene1_Background_SpriteSheet_19: -1155610174
+      Cutscene1_Background_SpriteSheet_20: 1392755815
+      Cutscene1_Background_SpriteSheet_21: -84127484
+      Cutscene1_Background_SpriteSheet_22: -272593086
+      Cutscene1_Background_SpriteSheet_23: -303064346
+      Cutscene1_Background_SpriteSheet_24: 1175609439
+      Cutscene1_Background_SpriteSheet_25: -1181980548
+      Cutscene1_Background_SpriteSheet_26: -1045625081
+      Cutscene1_Background_SpriteSheet_27: -1975976633
+      Cutscene1_Background_SpriteSheet_28: -1956922503
+      Cutscene1_Background_SpriteSheet_29: -1527340167
+      Cutscene1_Background_SpriteSheet_3: 435596422
+      Cutscene1_Background_SpriteSheet_30: 1610018503
+      Cutscene1_Background_SpriteSheet_31: -20117271
+      Cutscene1_Background_SpriteSheet_32: 577134697
+      Cutscene1_Background_SpriteSheet_33: -1401531021
+      Cutscene1_Background_SpriteSheet_4: -1394635397
+      Cutscene1_Background_SpriteSheet_5: 778732926
+      Cutscene1_Background_SpriteSheet_6: 2018231955
+      Cutscene1_Background_SpriteSheet_7: -1330542074
+      Cutscene1_Background_SpriteSheet_8: 830641307
+      Cutscene1_Background_SpriteSheet_9: -1250560833
+      Cutscene1_background1: 1545853695
+      Cutscene1_overlay: -1139439331
+      cutscene1_background: 408370801
+      cutscene1_foreground1: 113455942
+      cutscene1_foreground2: 132048638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
