@@ -9,9 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1672248102250936774}
-  - component: {fileID: -7103167910986975371}
-  - component: {fileID: 8278004098071283899}
-  - component: {fileID: 7176773210541391995}
   m_Layer: 0
   m_Name: PlacedPiecesParent_Fish
   m_TagString: fish
@@ -38,51 +35,6 @@ Transform:
   - {fileID: 4173309512660788246}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-7103167910986975371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2258870321953924980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a91b54be957d4c0e953726ec6fd960f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMoving: 0
-  bubble: {fileID: 8346425762988374993, guid: a4a2f05e34fb84a2c9fc4952eba6656e, type: 3}
-  bubbleCount: 4
-  maxYBubbles: 0
-  minYBubbles: 0
-  maxXBubbles: 0
-  minXBubbles: 0
---- !u!114 &8278004098071283899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2258870321953924980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbd5f2b3077ee4236847cecdfe4931e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7176773210541391995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2258870321953924980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6741f36adfdcb4d9c97c9c7f183795fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveDistance: 24
-  moveSpeed: 4
 --- !u!1 &2735728390793328841
 GameObject:
   m_ObjectHideFlags: 0
