@@ -17,17 +17,22 @@ public class BGComponentMover : MonoBehaviour
 
         // Find the player object in the scene and get the PlayerController script
 
-        playerController = player.GetComponent<FishIsMoving>();
+        //playerController = player.GetComponent<FishIsMoving>();
     }
        
 
     void Update()
     {
+        if(playerController == null)
+        {
+            playerController = player.GetComponent<FishIsMoving>();
+        }
         if (playerController != null && playerController.isMoving)
         {
             // Move the object toward the target if the player is moving
             float newX = Mathf.MoveTowards(transform.position.x, targetX, moveSpeed * Time.deltaTime);
             transform.position = new Vector3(newX, startPos.y, startPos.z);
+            Debug.Log(moveSpeed + " " + gameObject.name);
 
         }
     }

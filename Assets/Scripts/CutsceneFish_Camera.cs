@@ -7,12 +7,17 @@ public class CutsceneFish_Camera : MonoBehaviour
 
     public Transform fish;
     public float offsetX;
+    public GameObject playerFish;
 
     //private AudioSource backgroundLOne;
     // Start is called before the first frame update
     void Start()
     {
         //backgroundLOne = GetComponent<AudioSource>();
+        Vector3 fishPosition = new Vector3(transform.position.x, transform.position.y+2, 0);
+        GameObject thisFish = Instantiate(playerFish, fishPosition, Quaternion.identity);
+        fish = thisFish.transform;
+
     }
 
     // Update is called once per frame
