@@ -26,6 +26,9 @@ public class PieceSpawner : MonoBehaviour
     private GameObject parentObject;    // Store the parent object reference
 	private float prefabWidth;   // Variable to store the width of the prefab
     private float prefabHeight;  // Variable to store the height of the prefab
+	
+	private float x_done; // Variable to store the final position of the puzzle for animation
+	private float y_done; // Variable to store the final position of the puzzle for animation
 
 
     private void Start()
@@ -125,6 +128,10 @@ public class PieceSpawner : MonoBehaviour
 		string name = placedPieces[0].name;
 		int end = name.IndexOf('_');
         parentObject = new GameObject("PlacedPiecesParent_" + name.Substring(0, end));
+		
+		// Store the x and y position of first item (to be used for animation)
+		x_done = placedPieces[0].transform.position.x;
+		y_done = placedPieces[0].transform.position.y;
 
 		// Loop through each placed piece and set its parent to the new parentObject
 		foreach (GameObject piece in placedPieces)
