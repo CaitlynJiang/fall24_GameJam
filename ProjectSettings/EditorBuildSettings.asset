@@ -15,14 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial_Scene.unity
     guid: 204b2c5f94a718d4ab174f877dc60753
   - enabled: 1
-    path: Assets/Scenes/Tutorial_Cutscene.unity
-    guid: ac4f2f171df4a4f67b647dfefae5c707
-  - enabled: 1
     path: Assets/Scenes/Level1_Boat_Scene.unity
     guid: cff2ff08f995d6c47b7e8f19693218a2
   - enabled: 1
     path: Assets/Scenes/Level1_Pole_Scene.unity
     guid: 1c9ac3fc4fb24cf42b3b38315941df6f
+  - enabled: 1
+    path: Assets/Scenes/CutScene_2.unity
+    guid: 490679d6a7904ad41827754941eb64b5
   - enabled: 1
     path: Assets/Scenes/Level2_Bouquet_Scene.unity
     guid: 53e35da8b94647444b25bd34ba654dd2
@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2_Painting_Scene.unity
     guid: de7e14cd14b63804aa809c5b3a258b44
+  - enabled: 1
+    path: Assets/Scenes/CutScene_3.unity
+    guid: a7fbd7ab36c7a2c43a6b13fc577d77f3
   m_configObjects: {}
