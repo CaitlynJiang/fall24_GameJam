@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2_Painting_Scene.unity
     guid: de7e14cd14b63804aa809c5b3a258b44
   - enabled: 1
+    path: Assets/Scenes/Level2_Setting.unity
+    guid: 9e12c807fb7028749899cc472428a5ad
+  - enabled: 1
     path: Assets/Scenes/CutScene_3.unity
     guid: a7fbd7ab36c7a2c43a6b13fc577d77f3
   m_configObjects: {}
