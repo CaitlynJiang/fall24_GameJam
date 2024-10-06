@@ -64,7 +64,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd5f2b3077ee4236847cecdfe4931e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BGComponents: []
 --- !u!114 &7744309749629793328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,7 +78,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMoving: 0
   bubble: {fileID: 8346425762988374993, guid: a4a2f05e34fb84a2c9fc4952eba6656e, type: 3}
-  bubbleCount: 5
+  bubbleCount: 4
+  maxYBubbles: 0
+  minYBubbles: 0
   maxXBubbles: 6
   minXBubbles: 4
 --- !u!1 &2735728390793328841
