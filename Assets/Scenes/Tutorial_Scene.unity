@@ -795,6 +795,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 280800189676699173, guid: 76efaba4aa764e6448ab93208433a650, type: 3}
+      propertyPath: nextLevelButton
+      value: 
+      objectReference: {fileID: 2004198633}
+    - target: {fileID: 280800189676699173, guid: 76efaba4aa764e6448ab93208433a650, type: 3}
       propertyPath: levelCompleteText
       value: 
       objectReference: {fileID: 2120033196}
