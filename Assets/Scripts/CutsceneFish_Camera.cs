@@ -14,9 +14,9 @@ public class CutsceneFish_Camera : MonoBehaviour
     void Start()
     {
         //backgroundLOne = GetComponent<AudioSource>();
-        Vector3 fishPosition = new Vector3(transform.position.x, transform.position.y, 0);
+        /*Vector3 fishPosition = new Vector3(transform.position.x, transform.position.y, 0);
         GameObject thisFish = Instantiate(playerFish, transform.position, Quaternion.identity);
-        fish = thisFish.transform;
+        fish = thisFish.transform;*/
 
     }
 
