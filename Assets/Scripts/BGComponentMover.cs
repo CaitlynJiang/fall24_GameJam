@@ -23,6 +23,10 @@ public class BGComponentMover : MonoBehaviour
 
     void Update()
     {
+        if(player == null)
+        {
+            player = GameObject.FindWithTag("fish");
+        }
         if(playerController == null)
         {
             playerController = player.GetComponent<FishIsMoving>();

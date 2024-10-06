@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 09ab3f58186ad9549a7321be929d0a47
+guid: dd84135c28ba24077a3eed7db9219b74
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,112 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: candle_separate_0
-      rect:
-        serializedVersion: 2
-        x: 253
-        y: 655
-        width: 485
-        height: 355
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2198153a9efb8469f8e407e674bfd866
-      internalID: 573745231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: candle_separate_1
-      rect:
-        serializedVersion: 2
-        x: 894
-        y: 513
-        width: 117
-        height: 490
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 065b18d64fe04455d9f6b38c27e9c797
-      internalID: 2075124791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: candle_separate_2
-      rect:
-        serializedVersion: 2
-        x: 799
-        y: 77
-        width: 107
-        height: 369
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5bbad6f1f4464850bc18a3d004fc059
-      internalID: 517251842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: candle_separate_3
-      rect:
-        serializedVersion: 2
-        x: 568
-        y: 105
-        width: 130
-        height: 252
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54ec4c99211d54dbb95dbcc2eb0b0ee1
-      internalID: 1934644546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: candle_separate_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 17
-        width: 454
-        height: 533
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1c9dd02823784301bf6e8abe28301cf
-      internalID: 1681886866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -224,12 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      candle_separate_0: 573745231
-      candle_separate_1: 2075124791
-      candle_separate_2: 517251842
-      candle_separate_3: 1934644546
-      candle_separate_4: 1681886866
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
