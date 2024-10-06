@@ -23,6 +23,9 @@ public class PieceSpawner : MonoBehaviour
     private bool lastPieceSpawned = false; // Flag to stop spawning after the last piece
     private bool newParentCreated = false;  // Ensure we create the parent object only once
     private GameObject parentObject;    // Store the parent object reference
+	private float prefabWidth;   // Variable to store the width of the prefab
+    private float prefabHeight;  // Variable to store the height of the prefab
+
 
     private void Start()
     {
@@ -131,7 +134,10 @@ public class PieceSpawner : MonoBehaviour
 			}
 		}
 
-		Debug.Log("All placed pieces have been parented and their movement scripts disabled.");
+        // Calculate the width and height of the parent prefab
+        CalculatePrefabDimensions();
+
+        Debug.Log("All placed pieces have been parented, their movement scripts disabled, and dimensions calculated.");
 	}
 
 	#if UNITY_EDITOR
@@ -152,4 +158,27 @@ public class PieceSpawner : MonoBehaviour
 		Debug.Log("Parent object saved as prefab at: " + fullPath);
 	}
 	#endif
+
+    // Method to calculate the width and height of the parent object based on its child objects
+    private void CalculatePrefabDimensions()
+    {
+        // Create a new bounds object to hold the collective bounds of all child pieces
+        Bounds bounds = new Bounds(parentObject.transform.position, Vector3.zero);
+
+        // Loop through each child object and extend the bounds to encompass them
+        foreach (Transform child in parentObject.transform)
+        {
+            Renderer childRenderer = child.GetComponent<Renderer>();
+            if (childRenderer != null)
+            {
+                bounds.Encapsulate(childRenderer.bounds);  // Expand the bounds to include the child's bounds
+            }
+        }
+
+        // Store the width and height based on the calculated bounds
+        prefabWidth = bounds.size.x;  // Width is the size in the X direction
+        prefabHeight = bounds.size.y; // Height is the size in the Y direction
+
+        Debug.Log("Prefab Width: " + prefabWidth + ", Prefab Height: " + prefabHeight);
+    }
 }
