@@ -110,39 +110,46 @@ public class PieceSpawner : MonoBehaviour
         curr++;
     }
 
-    // Method to create a new parent GameObject and make all placed pieces its children
-    private void CreateParentForPlacedPieces()
-    {
-        // Create a new parent GameObject
+	// Method to create a new parent GameObject and make all placed pieces its children
+	private void CreateParentForPlacedPieces()
+	{
+		// Create a new parent GameObject
 		string name = placedPieces[0].name;
 		int end = name.IndexOf('_');
         parentObject = new GameObject("PlacedPiecesParent_" + name.Substring(0, end));
 
-        // Loop through each placed piece and set its parent to the new parentObject
-        foreach (GameObject piece in placedPieces)
-        {
-            piece.transform.SetParent(parentObject.transform);
-        }
+		// Loop through each placed piece and set its parent to the new parentObject
+		foreach (GameObject piece in placedPieces)
+		{
+			piece.transform.SetParent(parentObject.transform);
 
-        Debug.Log("All placed pieces have been parented to the new parent object.");
-    }
+			// Disable the PieceMovement script so the pieces don't move individually anymore
+			PieceMovement movementScript = piece.GetComponent<PieceMovement>();
+			if (movementScript != null)
+			{
+				movementScript.enabled = false;
+			}
+		}
 
-#if UNITY_EDITOR
-    // Save the parent object as a Prefab in the Editor
-    private void SaveParentAsPrefab()
-    {
-        if (parentObject == null)
-        {
-            Debug.LogError("No parent object to save.");
-            return;
-        }
+		Debug.Log("All placed pieces have been parented and their movement scripts disabled.");
+	}
 
-        // Define the full path to save the prefab
-        string fullPath = prefabSavePath + parentObject.name + ".prefab";
+	#if UNITY_EDITOR
+	// Save the parent object as a Prefab in the Editor
+	private void SaveParentAsPrefab()
+	{
+		if (parentObject == null)
+		{
+			Debug.LogError("No parent object to save.");
+			return;
+		}
 
-        // Use PrefabUtility to save the parent object as a Prefab
-        PrefabUtility.SaveAsPrefabAsset(parentObject, fullPath);
-        Debug.Log("Parent object saved as prefab at: " + fullPath);
-    }
-#endif
+		// Define the full path to save the prefab
+		string fullPath = prefabSavePath + parentObject.name + ".prefab";
+
+		// Use PrefabUtility to save the parent object as a Prefab
+		PrefabUtility.SaveAsPrefabAsset(parentObject, fullPath);
+		Debug.Log("Parent object saved as prefab at: " + fullPath);
+	}
+	#endif
 }
