@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Level1_FishinPole_Pieces1_0
+      name: FishingPole_Rod
       rect:
         serializedVersion: 2
         x: 29
@@ -118,7 +118,7 @@ TextureImporter:
         width: 719
         height: 540
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level1_FishinPole_Pieces1_1
+      name: FishingPole_Wheel
       rect:
         serializedVersion: 2
         x: 794
@@ -139,7 +139,7 @@ TextureImporter:
         width: 125
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level1_FishinPole_Pieces1_2
+      name: FishingPole_Bait
       rect:
         serializedVersion: 2
         x: 861
@@ -160,7 +160,7 @@ TextureImporter:
         width: 72
         height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level1_FishinPole_Pieces1_3
+      name: FishingPole_Hook
       rect:
         serializedVersion: 2
         x: 846
@@ -181,7 +181,7 @@ TextureImporter:
         width: 106
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Level1_FishinPole_Pieces1_0: -301711881
-      Level1_FishinPole_Pieces1_1: -232806036
-      Level1_FishinPole_Pieces1_2: -1753292733
-      Level1_FishinPole_Pieces1_3: 796003765
+      FishingPole_Bait: -1753292733
+      FishingPole_Hook: 796003765
+      FishingPole_Rod: -301711881
+      FishingPole_Wheel: -232806036
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
