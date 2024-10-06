@@ -13,6 +13,7 @@ public class PieceSpawner : MonoBehaviour
     public Transform spawnPoint;       // The position where pieces will spawn
     public float amplitude = 3.0f;     // Amplitude of the motion for each piece
     public Text levelCompleteText;     // Reference to the "Level Complete" UI text
+    public Button nextLevelButton;     // Reference to the "Next Level" UI button
     // public Animator cutsceneAnimator;  // Reference to the cutscene Animator
     public string prefabSavePath = "Assets/Prefabs/";  // Path to save Prefab (in Editor)
 
@@ -30,6 +31,7 @@ public class PieceSpawner : MonoBehaviour
     private void Start()
     {
         levelCompleteText.gameObject.SetActive(false); // Hide the text at the start
+        nextLevelButton.gameObject.SetActive(false);   // Hide the button at the start
         SpawnPiece();  // Spawn the first piece at the start
     }
 
@@ -50,6 +52,9 @@ public class PieceSpawner : MonoBehaviour
                 else
                 {
                     levelCompleteText.gameObject.SetActive(true);  // Display "Level Complete" message
+
+                    // Show button for next scene
+                    nextLevelButton.gameObject.SetActive(true);
 
                     // Create a parent object if it hasn't been created yet
                     if (!newParentCreated)
