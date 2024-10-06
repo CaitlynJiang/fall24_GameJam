@@ -1273,6 +1273,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 469501759}
     m_Modifications:
+    - target: {fileID: 1179431070444470931, guid: b3f3d27f1bd8ab34d800dd08759aa239, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1327236647698322066, guid: b3f3d27f1bd8ab34d800dd08759aa239, type: 3}
       propertyPath: m_Name
       value: Painting_Fish_Example
@@ -1315,6 +1319,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1875556752782576672, guid: b3f3d27f1bd8ab34d800dd08759aa239, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7974556702883198365, guid: b3f3d27f1bd8ab34d800dd08759aa239, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210763912751381853, guid: b3f3d27f1bd8ab34d800dd08759aa239, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
