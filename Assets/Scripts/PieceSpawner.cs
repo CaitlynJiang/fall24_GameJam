@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;  // Import the Unity UI namespace to access the Text component
 
+#if UNITY_EDITOR
+using UnityEditor;  // Import the Unity Editor namespace to access PrefabUtility
+#endif
+
 public class PieceSpawner : MonoBehaviour
 {
     public GameObject[] piecePrefabs;  // Array of different piece prefabs to spawn
     public Transform spawnPoint;       // The position where pieces will spawn
     public float amplitude = 3.0f;     // Amplitude of the motion for each piece
     public Text levelCompleteText;     // Reference to the "Level Complete" UI text
-    public Animator cutsceneAnimator;  // Reference to the cutscene Animator
+    // public Animator cutsceneAnimator;  // Reference to the cutscene Animator
+    public string prefabSavePath = "Assets/Prefabs/";  // Path to save Prefab (in Editor)
 
     private GameObject currentPiece;   // The currently active piece
     private List<GameObject> placedPieces = new List<GameObject>(); // Track placed pieces
@@ -50,7 +55,11 @@ public class PieceSpawner : MonoBehaviour
                         newParentCreated = true;  // Ensure the parent is only created once
 
                         // Trigger the cutscene animation after the last piece is placed
-                        cutsceneAnimator.SetTrigger("StartCutscene");  
+                        // cutsceneAnimator.SetTrigger("StartCutscene");
+
+#if UNITY_EDITOR
+                        SaveParentAsPrefab();  // Save the parent object as a Prefab (Editor only)
+#endif
                     }
                 }
             }
@@ -105,7 +114,9 @@ public class PieceSpawner : MonoBehaviour
     private void CreateParentForPlacedPieces()
     {
         // Create a new parent GameObject
-        parentObject = new GameObject("PlacedPiecesParent");
+		string name = placedPieces[0].name;
+		int end = name.IndexOf('_');
+        parentObject = new GameObject("PlacedPiecesParent_" + name.Substring(0, end));
 
         // Loop through each placed piece and set its parent to the new parentObject
         foreach (GameObject piece in placedPieces)
@@ -115,4 +126,23 @@ public class PieceSpawner : MonoBehaviour
 
         Debug.Log("All placed pieces have been parented to the new parent object.");
     }
+
+#if UNITY_EDITOR
+    // Save the parent object as a Prefab in the Editor
+    private void SaveParentAsPrefab()
+    {
+        if (parentObject == null)
+        {
+            Debug.LogError("No parent object to save.");
+            return;
+        }
+
+        // Define the full path to save the prefab
+        string fullPath = prefabSavePath + parentObject.name + ".prefab";
+
+        // Use PrefabUtility to save the parent object as a Prefab
+        PrefabUtility.SaveAsPrefabAsset(parentObject, fullPath);
+        Debug.Log("Parent object saved as prefab at: " + fullPath);
+    }
+#endif
 }
