@@ -8,7 +8,7 @@ public class BGComponentMover : MonoBehaviour
     private Vector3 startPos;
     private float targetX;
 
-    private fishIsMoving playerController; // Reference to the PlayerController
+    private FishIsMoving playerController; // Reference to the PlayerController
 
     void Start()
     {
@@ -17,7 +17,7 @@ public class BGComponentMover : MonoBehaviour
 
         // Find the player object in the scene and get the PlayerController script
 
-        playerController = player.GetComponent<fishIsMoving>();
+        playerController = player.GetComponent<FishIsMoving>();
     }
        
 

@@ -519,6 +519,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMoving: 0
+  bubble: {fileID: 8346425762988374993, guid: a4a2f05e34fb84a2c9fc4952eba6656e, type: 3}
+  bubbleCount: 4
+  maxXBubbles: 6
+  minXBubbles: 4
 --- !u!1 &1458110004
 GameObject:
   m_ObjectHideFlags: 0
