@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5369634495744951402}
   m_Layer: 0
   m_Name: Fish_CutsceneSprite
-  m_TagString: Untagged
+  m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,5 +115,7 @@ MonoBehaviour:
   isMoving: 0
   bubble: {fileID: 8346425762988374993, guid: a4a2f05e34fb84a2c9fc4952eba6656e, type: 3}
   bubbleCount: 4
+  maxYBubbles: 0
+  minYBubbles: 0
   maxXBubbles: 6
   minXBubbles: 4
