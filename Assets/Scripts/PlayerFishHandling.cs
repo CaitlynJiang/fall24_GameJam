@@ -17,6 +17,8 @@ public class PlayerFishHandling : MonoBehaviour
         currentScale.y = -currentScale.y;  // Flip along Y-axis
         transform.localScale = currentScale;
 
+        gameObject.tag = "fish";
+
         foreach (Transform child in transform)
         {
             // Check if the child has a Renderer component
