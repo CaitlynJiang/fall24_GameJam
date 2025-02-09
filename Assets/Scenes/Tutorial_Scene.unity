@@ -1157,14 +1157,14 @@ RectTransform:
   m_GameObject: {fileID: 2004198631}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7.7539506, y: 30.972906, z: 2.5810754}
+  m_LocalScale: {x: 6.7681136, y: 27.035013, z: 2.2529178}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1772361792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 257, y: 178}
+  m_AnchoredPosition: {x: 284, y: 178}
   m_SizeDelta: {x: 74.76, y: 14.014}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2004198633
@@ -1220,7 +1220,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level1_Boat_Scene
+          m_StringArgument: CutScene_1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2004198634
