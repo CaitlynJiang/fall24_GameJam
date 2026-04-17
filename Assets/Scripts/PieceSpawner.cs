@@ -64,6 +64,7 @@ public class PieceSpawner : MonoBehaviour
                     {
                         CreateParentForPlacedPieces();
                         newParentCreated = true;  // Ensure the parent is only created once
+                        CompletedPuzzleRuntimeStore.Register(parentObject);
 
                         // Trigger the cutscene animation after the last piece is placed
                         // cutsceneAnimator.SetTrigger("StartCutscene");
@@ -82,6 +83,7 @@ public class PieceSpawner : MonoBehaviour
     {
         // Spawn the next piece from the array
         currentPiece = Instantiate(piecePrefabs[currentPieceIndex], spawnPoint.position, Quaternion.identity);
+        CompletedPuzzleRuntimeStore.ApplyTo(currentPiece);
 
         // Add the newly spawned piece to the list of placed pieces
         placedPieces.Add(currentPiece);
@@ -127,7 +129,8 @@ public class PieceSpawner : MonoBehaviour
 		// Create a new parent GameObject
 		string name = placedPieces[0].name;
 		int end = name.IndexOf('_');
-        parentObject = new GameObject("PlacedPiecesParent_" + name.Substring(0, end));
+        string puzzleName = end > 0 ? name.Substring(0, end) : name.Replace(" (Clone)", "").Replace("(Clone)", "");
+        parentObject = new GameObject("PlacedPiecesParent_" + puzzleName);
 		
 		// Store the x and y position of first item (to be used for animation)
 		x_done = placedPieces[0].transform.position.x;
